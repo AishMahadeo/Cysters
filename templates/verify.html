@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Code Verification</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 offset-md-4 form">
+                <form action="/validate" method="POST" autocomplete="off">
+                    <h2 class="text-center">Code Verification</h2>
+                   
+                        <div class="alert alert-success text-center">
+                            <h6>One time password has been sent to the mail id. please check </h6>
+                            <h5>By CYSTERS</h5>
+                          
+                        </div>
+                     
+                    <div class="form-group">
+                        <input class="form-control" type="number" name="otp" placeholder="Enter verification code" required>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control button" type="submit" name="check" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

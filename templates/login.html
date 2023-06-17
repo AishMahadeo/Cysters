@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        nav{
+        padding-left: 100px!important;
+        padding-right: 100px!important;
+        background: #A1A1A1;
+        font-family: 'Poppins', sans-serif;
+    } 
+    nav a.navbar-brand{
+        color: #fff;
+        font-size: 30px!important;
+        font-weight: 500;
+    }
+    /* nav a.navbar-b1{
+        right-padding:25px;
+    } */
+    </style>
+</head>
+<body>
+<nav class="navbar">
+    <a class="navbar-brand" href="./index.html">CYSTERS</a>
+    <a >Enter your details and start journey with us</a>
+    
+    </nav>
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-md-4 offset-md-4 form login-form">
+                <form action="{{ url_for('login') }}" method="POST">
+                    <h2 class="text-center">Login Form</h2>
+                    <p class="text-center">Login with your email and password.</p>
+                    {% if mesage is defined and mesage %}
+                    <div class="alert alert-warning">{{ mesage }}</div>
+                    {% endif %}
+                       
+                     
+                    <div class="form-group">
+                        <input class="form-control" type="email" name="email" placeholder="Email Address" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="password" name="password" placeholder="Password" name="pwd" required>
+                    </div>
+                    <div class="link forget-pass text-left"><a href="forgot-password.php">Forgot password?</a></div>
+                    <div class="form-group">
+                        <input class="form-control button" type="submit" name="login" value="Login">
+                    </div>
+                    <div class="link login-link text-center">Not yet a member? <a href="{{url_for('register')}}">Signup now</a></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

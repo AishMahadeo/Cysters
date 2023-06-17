@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html>
+<head>
+          <title></title>
+            <link href ="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap" rel="stylesheet">
+          
+             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.heads{
+    flex-direction : row;
+    display: flex;
+    height: 75px;
+    background:transparent;
+    width: 100%;
+ 
+     
+}
+body{
+  background: linear-gradient(#3c0565, #5f1491);
+background: #FDC830;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+background-repeat:no-repeat;
+background-size: cover;
+
+
+}
+
+
+.logo{
+    font-size: 20px;
+    font-family:monospace;
+    color:#6e6b74;
+    margin-left: 20px;
+    margin-top:25px;
+
+}
+.other{
+    flex-direction : row;
+    display: flex;
+    margin-left: 10px;
+    margin-top: 30px;
+    color:#ddd8d8;
+    font-family:monospace
+}
+
+.logo h3{
+ color:#f5fefbf7;
+}
+.x a{
+  color:#f5fefbf7;
+  margin-left:30px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Exo', sans-serif;
+}
+
+.upform{
+    background:#75717a3b;
+    width:200px;
+    padding:20px 40px;
+    margin-left:0px;
+    margin-top:20px;
+    border-radius:30px;
+    color:black;
+}
+
+.area{
+     width: 100%;
+    height:600vh;
+    
+   
+}
+
+p{
+color : white;
+margin-top:20px;
+}
+
+.btn {
+  border: 1px solid #808080;
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 20px;
+  position: relative;
+  text-align: left;
+  border-radius: 3px;
+  -webkit-transition: background 600ms ease, color 600ms ease;
+  transition: background 600ms ease, color 600ms ease;
+  
+}
+.btn span {
+  border: 1px solid #808080;
+  display: inline-block;
+  padding: 1px 6px;
+  font-size: 12px;
+  border-radius: 5px;
+  vertical-align: middle;
+  text-align: center;
+  margin-top: -5px;
+}
+
+input[type="radio"].toggle {
+  display: none;
+}
+input[type="radio"].toggle + label {
+  cursor: pointer;
+  min-width: 80px;
+}
+input[type="radio"].toggle + label:hover {
+  background: none;
+  color: #FFF;
+}
+input[type="radio"].toggle + label:after {
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  -webkit-transition: left 100ms cubic-bezier(0.77, 0, 0.175, 1);
+  transition: left 100ms cubic-bezier(0.77, 0, 0.175, 1);
+  width: 100%;
+  z-index: -1;
+}
+input[type="radio"].toggle.toggle-left + label {
+}
+input[type="radio"].toggle.toggle-left + label:after {
+  left: 100%;
+}
+input[type="radio"].toggle.toggle-right + label {
+  margin-left: 10px;
+}
+input[type="radio"].toggle.toggle-right + label:after {
+  left: -100%;
+}
+input[type="radio"].toggle:checked + label {
+  background: #FFF;
+  cursor: default;
+  color: #000;
+}
+input[type="radio"].toggle:checked + label:after {
+  left: 0;
+}
+
+input{
+    width:70%;
+    border-radius:10px;
+    padding:6px 30px;
+    background:transparent;
+    border:1px solid #312f2f66;
+    margin-top:10px;
+    text-transform:uppercase;
+}
+
+input[type=submit]{
+    background:#f7f6fd;
+    margin-left:0px;
+    padding:10px;
+    cursor: pointer;
+    background-color: #101010;
+}
+
+
+
+@media only screen and (min-width: 400px) and (max-width: 690px)
+{
+  .other{
+    margin-left: 50px;
+  }
+}
+@media only screen and (min-width: 699px) and (max-width:890px)
+{
+.logo{
+  margin-left:50px;
+}
+.x {
+  margin-left:90px;
+}
+img{
+  width:250px;
+}
+.area{
+     width: 100%;
+    height:450vh;
+    
+   
+}
+
+}
+
+@media only screen and (min-width: 900px) 
+{
+  .main{
+    flex-direction:row;
+   
+  }
+  .logo{
+  margin-left:80px;
+}
+.other{
+  margin-left:700px;
+}
+.x {
+  margin-left:90px;
+}
+
+.upform{
+    background:#75717a3b;
+    width:650px;
+    padding:50px;
+    margin-left:0px;
+    margin-top:20px;
+    border-radius:30px;
+    color:black;
+
+}
+
+.area{
+     width: 100%;
+    height:450vh;
+    
+   
+}
+
+/* UPFORM STYLE STARTS*/
+.upform input:focus, select:focus, textarea:focus, button:focus {
+  outline: none;
+  border-color: rgb(174, 2, 2) !important;
+}
+.upform input, select, textarea {
+  background-color: transparent;
+  color: rgb(241, 235, 235);
+}
+
+
+/* .upform .upform-main {
+}
+.upform .upform-main .input-block {
+  padding: 15px 0;
+ 
+  cursor: default;
+} */
+/* .upform .upform-main .input-block .label {
+ 
+  font-size: 1.1em;
+  line-height: 15px;
+} */
+.upform .upform-main .input-block .input-control {
+  margin: 20px 0;
+}
+/* .upform .upform-main .input-block .input-control input[type=text] {
+  border: none;
+  outline-width: 0;
+  border-bottom: 2px solid rgb(211, 208, 208);
+  width: 100%;
+  font-size: 15px;
+  padding-bottom: 10px;
+} */
+
+/* .upform .upform-main .input-block.active {
+  opacity: 0;
+} */
+
+/* .upform .upform-footer {
+  margin-top: 60px;
+} */
+/* .upform .upform-footer .btn {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 5px 20px;
+} */
+}
+</style>
+
+         </head>
+<body>
+<div class="area" align="center">
+<div class="heads">
+<div class ="logo">
+<a href ="/" style="text-decoration:none;">
+<h3>CYSTERS</h3></a>
+</div>
+<div class = "other">
+<div class="x" >
+<a href ="./dashboard.html" style="text-decoration:none;">
+Get Started</a>
+</div>
+<div class="x">
+<a href ="./disindex.html" style="text-decoration:none;">
+Awareness</a>
+</div>
+<div class="x">
+<a href ="./test.html" style="text-decoration:none;">
+test </a>
+</div>
+</div>
+</div>
+
+ <center><img src="../static/13.jpg" alt="LOVE YOURSELF FIRST" height="100px" width="150px" style="border-radius:50px; border: 1px solid white; padding:10px;"></center>
+  
+<div class="mains">
+<p> Never forget to love your own body :)</p>
+ <br><br>ALERT: PCOS is a women health issue !
+<div class="photo">
+
+</div>
+    
+
+<div class="upform" align="center">
+ <form method="POST", action="{{url_for('home')}}">
+           <b> 
+            <div class="upform-header"></div>
+
+
+            <div class="upform-main">
+              <!--  -->
+              <div class="input-block">
+                <div class="label">1. How old are you?*</div>
+                <div class="input-control">
+                  <input type="text" class="required" name="ZZ" placeholder="Age(years)" autocomplete="off">
+                </div>
+              </div>
+      <!--  -->
+      
+      <div class="input-block">
+        <div class="label">2. How much do you weigh?*</div>
+        <div class="input-control">
+          <input type="text" class="required" name="s" placeholder="Weight(Kg)" autocomplete="off">
+        </div>
+      </div>
+      <!--  -->
+      <div class="input-block">
+        <div class="label">3. What is your Height??</div>
+        <div class="input-control">
+          <input type="text" class="required" name="t" placeholder="Height(cm)" autocomplete="off">
+        </div>
+      </div>
+      
+      <div class="input-block">
+        <div class="label">4. What is your BMI?(Weight in kg/Height in m^2)*</div>
+        <div class="input-control">
+          <input type="text" class="required" name="u" placeholder="BMI" autocomplete="off">
+        </div>
+      </div>
+      <!--  -->
+      
+      <div class="input-block">
+        <div class="label">5. Could you take your inchtape and tell us about your hip measurement? (inch)*</div>
+        <div class="input-control">
+          <input type="text" class="required" name="za" placeholder="Hip Size in inch" autocomplete="off">
+        </div>
+      </div>
+      <!--  -->
+      
+      <div class="input-block">
+        <div class="label">6. What is your waist measurement? (inch)*</div>
+        <div class="input-control">
+          <input type="text" class="required" name="zb" placeholder="Waist size in inch" autocomplete="off">
+        </div>
+      </div>
+      <!--  -->
+      
+      <div class="input-block">
+        <div class="label">7. Waist in inch/Hip in inch Ratio?*</div>
+        <div class="input-control">
+          <input type="text" class="required" name="zc" placeholder="Waist size in inch" autocomplete="off">
+        </div>
+      </div>
+      <!--  -->
+      
+      <div class="input-block">
+        <div class="label">8. In how many months, do you get your cycle?*</div>
+        <div class="input-control">
+          <input type="text" class="required" name="x" placeholder="Cycle length in months" autocomplete="off">
+        </div>
+      </div>
+      <!--  -->
+      
+      <div class="input-block">
+        <div class="label">9. How long does your cycle last?*</div>
+        <div class="input-control">
+          <input type="text" class="required" name="y" placeholder="Cycle length in days" autocomplete="off">
+        </div>
+      </div>
+      <!--  -->
+      
+      <div class="input-block">
+        <div class="label">10. What is your blood group?*(A+ = 11, A- = 12, B+ = 13, B- = 14, O+ = 15, O- = 16, AB+ = 17, AB- = 18)</div>
+        <div class="input-control">
+          <input type="text" class="required" name="v" placeholder="Blood group" autocomplete="off">
+        </div>
+      </div>
+      <!--  -->
+           
+      
+      <div class="input-block">
+        <div class="label">11. What's your marital status?*(if YES=1, NO=0)</div>
+        <div class="input-control">
+          <input type="text" class="required" name="z" placeholder="Marriage Status (Years)" autocomplete="off">
+        </div>
+      </div>
+      <!--  -->
+      
+              <div class="input-block">
+                <div class="label">12. Have you ever been pregnant?*</div>
+                <div class="input-control">
+                  <input id="toggle-on-q1" class="toggle toggle-left" name="c" value="1" type="radio">
+                  <label for="toggle-on-q1" class="btn"><span>A</span> Yes</label>
+                  <input id="toggle-off-q1" class="toggle toggle-right" name="c" value="0" type="radio">
+                  <label for="toggle-off-q1" class="btn"><span>B</span> No</label>
+                </div>
+              </div>
+      <!--  -->
+              <div class="input-block">
+                <div class="label">13. Have you ever had an abortion, if yes how many? (if not, please enter 0)*</div>
+                <div class="input-control">
+                  <input id="toggle-on-q2" class="toggle toggle-left" name="d" value="1" type="radio">
+                  <label for="toggle-on-q2" class="btn"><span>A</span> Yes</label>
+                  <input id="toggle-off-q2" class="toggle toggle-right" name="d" value="0" type="radio">
+                  <label for="toggle-off-q2" class="btn"><span>B</span> No</label>
+                </div>
+              </div>
+      <!--  -->
+      <div class="input-block">
+        <div class="label">14. Have you seen your hair grow in the past couple of months on legs and hands?*</div>
+        <div class="input-control">
+          <input id="toggle-on-q11" class="toggle toggle-left" name="m" value="1" type="radio">
+          <label for="toggle-on-q11" class="btn"><span>A</span> Yes</label>
+          <input id="toggle-off-q11" class="toggle toggle-right" name="m" value="0" type="radio">
+          <label for="toggle-off-q11" class="btn"><span>B</span> No</label>
+        </div>
+      </div>
+      <!--  -->
+      
+      <div class="input-block">
+        <div class="label">15. Do you get a lot of facial hair?*</div>
+        <div class="input-control">
+          <input id="toggle-on-q4" class="toggle toggle-left" name="f" value="1" type="radio">
+          <label for="toggle-on-q4" class="btn"><span>A</span> Yes</label>
+          <input id="toggle-off-q4" class="toggle toggle-right" name="f" value="0" type="radio">
+          <label for="toggle-off-q4" class="btn"><span>B</span> No</label>
+        </div>
+      </div>
+      <!--  -->
+      
+      <div class="input-block">
+        <div class="label">16. Do you have any chest hair?*</div>
+        <div class="input-control">
+          <input id="toggle-on-q5" class="toggle toggle-left" name="g" value="1" type="radio">
+          <label for="toggle-on-q5" class="btn"><span>A</span> Yes</label>
+          <input id="toggle-off-q5" class="toggle toggle-right" name="g" value="0" type="radio">
+          <label for="toggle-off-q5" class="btn"><span>B</span> No</label>
+        </div>
+      </div>
+      <!--  -->
+      
+      
+              <div class="input-block">
+                <div class="label">17. Do you feel bloated in these past few weeks?*</div>
+                <div class="input-control">
+                  <input id="toggle-on-q3" class="toggle toggle-left" name="e" value="1" type="radio">
+                  <label for="toggle-on-q3" class="btn"><span>A</span> Yes</label>
+                  <input id="toggle-off-q3" class="toggle toggle-right" name="e" value="0" type="radio">
+                  <label for="toggle-off-q3" class="btn"><span>B</span> No</label>
+                </div>
+              </div>
+             
+      
+              
+      
+      <!--  -->
+      
+      <div class="input-block">
+        <div class="label">18. Have you suffered from hair loss recently?*</div>
+        <div class="input-control">
+          <input id="toggle-on-q13" class="toggle toggle-left" name="o" value="1" type="radio">
+          <label for="toggle-on-q13" class="btn"><span>A</span> Yes</label>
+          <input id="toggle-off-q13" class="toggle toggle-right" name="o" value="0" type="radio">
+          <label for="toggle-off-q13" class="btn"><span>B</span> No</label>
+        </div>
+      </div>
+      <!--  -->
+      
+      <div class="input-block">
+        <div class="label">19. Do you feel too moody?*</div>
+        <div class="input-control">
+          <input id="toggle-on-q7" class="toggle toggle-left" name="i" value="1" type="radio">
+          <label for="toggle-on-q7" class="btn"><span>A</span> Yes</label>
+          <input id="toggle-off-q7" class="toggle toggle-right" name="i" value="0" type="radio">
+          <label for="toggle-off-q7" class="btn"><span>B</span> No</label>
+        </div>
+      </div>
+      <!--  -->
+      
+      <div class="input-block">
+        <div class="label">20. In general, do you feel depressed or stressed out at times?*</div>
+        <div class="input-control">
+          <input id="toggle-on-q8" class="toggle toggle-left" name="j" value="1" type="radio">
+          <label for="toggle-on-q8" class="btn"><span>A</span> Yes</label>
+          <input id="toggle-off-q8" class="toggle toggle-right" name="j" value="0" type="radio">
+          <label for="toggle-off-q8" class="btn"><span>B</span> No</label>
+        </div>
+      </div>
+      <!--  -->
+      
+      <div class="input-block">
+        <div class="label">21. Do you sleep well at night?*</div>
+        <div class="input-control">
+          <input id="toggle-on-q9" class="toggle toggle-left" name="k" value="1" type="radio">
+          <label for="toggle-on-q9" class="btn"><span>A</span> Yes</label>
+          <input id="toggle-off-q9" class="toggle toggle-right" name="k" value="0" type="radio">
+          <label for="toggle-off-q9" class="btn"><span>B</span> No</label>
+        </div>
+      </div>
+      
+       <!--  -->
+              
+       <div class="input-block">
+        <div class="label">22. Has your skin darkened in the recent months?*</div>
+        <div class="input-control">
+          <input id="toggle-on-q12" class="toggle toggle-left" name="n" value="1" type="radio">
+          <label for="toggle-on-q12" class="btn"><span>A</span> Yes</label>
+          <input id="toggle-off-q12" class="toggle toggle-right" name="n" value="0" type="radio">
+          <label for="toggle-off-q12" class="btn"><span>B</span> No</label>
+        </div>
+      </div>
+      
+      <!--  -->
+      
+      <div class="input-block">
+        <div class="label">23. We know that pimples always pop up at the wrong times but is that frequent with you?*</div>
+        <div class="input-control">
+          <input id="toggle-on-q14" class="toggle toggle-left" name="p" value="1" type="radio">
+          <label for="toggle-on-q14" class="btn"><span>A</span> Yes</label>
+          <input id="toggle-off-q14" class="toggle toggle-right" name="p" value="0" type="radio">
+          <label for="toggle-off-q14" class="btn"><span>B</span> No</label>
+        </div>
+      </div>
+      <!--  -->
+      
+      <div class="input-block">
+        <div class="label">24. We know this could be depressing but have you recently gained weight?*</div>
+        <div class="input-control">
+          <input id="toggle-on-q10" class="toggle toggle-left" name="l" value="1" type="radio">
+          <label for="toggle-on-q10" class="btn"><span>A</span> Yes</label>
+          <input id="toggle-off-q10" class="toggle toggle-right" name="l" value="0" type="radio">
+          <label for="toggle-off-q10" class="btn"><span>B</span> No</label>
+        </div>
+      </div>
+      <!--  -->
+      
+      
+              <div class="input-block">
+                <div class="label">25. Have you been facing difficulty in loosing weight?*</div>
+                <div class="input-control">
+                  <input id="toggle-on-q6" class="toggle toggle-left" name="h" value="1" type="radio">
+                  <label for="toggle-on-q6" class="btn"><span>A</span> Yes</label>
+                  <input id="toggle-off-q6" class="toggle toggle-right" name="h" value="0" type="radio">
+                  <label for="toggle-off-q6" class="btn"><span>B</span> No</label>
+                </div>
+              </div>
+      <!--  -->
+                    
+              <div class="input-block">
+                <div class="label">26. Do you consume fast-food frequently?*</div>
+                <div class="input-control">
+                  <input id="toggle-on-q15" class="toggle toggle-left" name="q" value="1" type="radio">
+                  <label for="toggle-on-q15" class="btn"><span>A</span> Yes</label>
+                  <input id="toggle-off-q15" class="toggle toggle-right" name="q" value="0" type="radio">
+                  <label for="toggle-off-q15" class="btn"><span>B</span> No</label>
+                </div>
+              </div>
+      <!--  -->
+              <div class="input-block">
+                <div class="label">27. Do you exercise regularly?(walking,meditation etc. is also considered)*</div>
+                <div class="input-control">
+                  <input id="toggle-on-q16" class="toggle toggle-left" name="r" value="1" type="radio">
+                  <label for="toggle-on-q16" class="btn"><span>A</span> Yes</label>
+                  <input id="toggle-off-q16" class="toggle toggle-right" name="r" value="0" type="radio">
+                  <label for="toggle-off-q16" class="btn"><span>B</span> No</label>
+                </div>
+              </div>
+        
+      
+              
+              <!--  -->
+      
+              
+      
+              
+      
+           
+      
+          
+            </div>
+        
+
+
+
+<!-- What is your age? 
+<br> <input type="text", name='a', placeholder="enter 1"> <br><br>
+
+What is your weight(kg)?
+<br> <input type="text", name='b', placeholder="enter 2"> <br><br>
+
+What is you height(cm)?
+<br> <input type="text", name='c', placeholder="enter 3"> <br><br>
+
+BMI(Height/weight)
+<br><input type="text", name='d', placeholder="enter 4"> <br><br>
+
+Blood Group?(A:11, B:12,O:13 , AB:14, -veA:15,-veB:16,-veO:17, -veAB:18) 
+<br> <input type="text", name='e', placeholder="enter 5"> <br><br>
+
+Periodic Cycle(months)(In how many months do you get periods)
+<br> <input type="text", name='f', placeholder="enter 6"> <br><br>
+
+For how many days your periods lasts(days) 
+<br> <input type="text", name='g', placeholder="enter 7"> <br><br>
+
+Marriage Status (Yrs)
+<br> <input type="text", name='h', placeholder="enter 8"> <br><br>
+
+ANSWER 1 IF YES ELSE 0 !(Only is the questions where (Y/N) is mentioned
+<br><br>
+
+Pregnant(Y/N)
+<br> <input type="text", name='i', placeholder="enter 9"> <br><br>
+
+No of aborptions
+<br> <input type="text", name='j', placeholder="enter 10"> <br><br>
+
+Do you feel Bloated?(Y/N)
+<br> <input type="text", name='k', placeholder="enter 11"> <br><br>
+
+Do you have facial hair growth (Y/N)
+<br> <input type="text", name='l', placeholder="enter 12"> <br><br>
+
+Do you have thin chest hair? (Y/N)
+<br> <input type="text", name='m', placeholder="enter 13"> <br><br>
+
+Hip(inch)
+<br> <input type="text", name='n', placeholder="enter 14"> <br><br>
+
+Waist(inch)
+<br> <input type="text", name='o', placeholder="enter 15"> <br><br>
+
+Waist/Hip Ratio
+<br> <input type="text", name='p', placeholder="enter 16"> <br><br>
+
+ANSWER 1 IF YES ELSE 0 !(Only is the questions where (Y/N) is mentioned
+<br><br>
+difficulty in loosing weight(Y/N)
+<br> <input type="text", name='q', placeholder="enter 17"> <br><br>
+
+Do you have frequent mood swings?(Y/N)
+<br> <input type="text", name='r', placeholder="enter 18"> <br><br>
+
+Do you have anxiety/depression/stress?
+<br> <input type="text", name='s', placeholder="enter 19"> <br><br>
+
+Do you have irregular sleep pattern? (Y/N)
+<br> <input type="text", name='t', placeholder="enter 20"> <br><br>
+
+Did you gained weight?(Y/N)
+<br> <input type="text", name='u', placeholder="enter 21"> <br><br>
+
+Do you have hair growth?(Y/N)
+<br> <input type="text", name='v', placeholder="enter 22"> <br><br>
+
+Is your Skin darkening? (Y/N)
+<br> <input type="text", name='w', placeholder="enter 23"> <br><br>
+
+Do you suffer from Hair loss?(Y/N)
+<br> <input type="text", name='x', placeholder="enter 24"> <br><br>
+
+Do you have Pimples?(Y/N) 
+<br> <input type="text", name='y', placeholder="enter 25"> <br><br>
+
+Do you eat frequently Fast food ?(Y/N)
+<br> <input type="text", name='z', placeholder="enter 26"> <br><br>
+
+Do you do Reg Exercise?(Y/N) 
+<br> <input type="text", name='za', placeholder="enter 27"> <br><br> -->
+
+
+
+
+
+
+           <input type="submit",class="button" , value='Result!' >
+        </form>
+
+
+
+</div>
+</div>
+
+<p>By CYSTERS</p>
+ </div >
+
+</body>
+</html>
