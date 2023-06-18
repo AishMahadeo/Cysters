@@ -29,5 +29,5 @@ This is my BE project i.e PCOS Detection using ML.
 
 ## Author
  It was a BE final year project made by-\
- **Aishvarya Birambole**\
+ **Aishvarya Birambole**
  
