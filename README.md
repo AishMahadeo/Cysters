@@ -31,5 +31,3 @@ This is my BE project i.e PCOS Detection using ML.
  It was a BE final year project made by-\
  **Aishvarya Birambole**\
  
-
-![alt text](https://github.com/AishMahadeo/SMART-LC/blob/master/SMART%20LC.jpg)
